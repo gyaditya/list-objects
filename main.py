@@ -53,5 +53,3 @@ def letterUser(anArray):
             print(anArray[i]["name"])
             counter += 1
     print("The total number of colors that starts with " + userInput + " is:\n" + str(counter))
-
-letterUser(color_data)
