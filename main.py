@@ -48,6 +48,9 @@ def  colorUser(anArray):
 #Fifth
 def letterUser(anArray):
     userInput = input("What is your letter:\n").upper()
+    counter = 0
     for i in range(len(anArray)):
         if anArray[i]["name"].startswith(userInput):
             print(anArray[i]["name"])
+            counter += 1
+    print("The total number of colors that starts with " + userInput + "is:\n" + str(counter))
